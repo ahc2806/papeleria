@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorProveedores">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar>
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Edit">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="900.0" style="-fx-background-color: #1ABC9C;">
+               <children>
+                  <Pane prefHeight="75.0" prefWidth="130.0">
+                     <children>
+                        <ImageView fitHeight="75.0" fitWidth="130.0" pickOnBounds="true">
+                           <effect>
+                              <ColorAdjust brightness="0.49" contrast="0.95" saturation="-0.05" />
+                           </effect>
+                           <image>
+                              <Image url="@img/papeleriacinthya.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label alignment="CENTER" contentDisplay="TEXT_ONLY" maxHeight="1200.0" maxWidth="1980.0" text="Registro de Proveedores" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+               <children>
+                  <ToolBar orientation="VERTICAL" prefHeight="500.0" prefWidth="130.0" style="-fx-background-color: #7D3C98;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <items>
+                        <Button fx:id="btnNuevo" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickNuevo" style="-fx-background-color: transparent;" text="Nuevo" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0">
+                                 <image>
+                                    <Image url="@img/nuevo.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="35.0" right="35.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnEditar" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickEditar" style="-fx-background-color: transparent;" text="Editar" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0">
+                                 <image>
+                                    <Image url="@img/editar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="35.0" right="35.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnGuardar" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickGuardar" style="-fx-background-color: transparent;" text="Guardar" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0">
+                                 <image>
+                                    <Image url="@img/guardar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="33.0" right="33.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnCancelar" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickCancelar" style="-fx-background-color: transparent;" text="Cancelar" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0">
+                                 <image>
+                                    <Image url="@img/cancelar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="31.0" right="32.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnEliminar" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickEliminar" style="-fx-background-color: transparent;" text="Eliminar" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0">
+                                 <image>
+                                    <Image url="@img/eliminar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="33.0" right="33.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnAgregarComp" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickCompanias" style="-fx-background-color: transparent;" text="Agregar&#10;Compañía" textAlignment="CENTER" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="60.0" fitWidth="60.0">
+                                 <image>
+                                    <Image url="@img/compañias.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="26.0" right="27.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnRegresar" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickRegresar" style="-fx-background-color: transparent;" text="Regresar" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="52.0" fitWidth="52.0">
+                                 <image>
+                                    <Image url="@img/regresar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="31.0" right="31.0" top="5.0" />
+                           </padding>
+                        </Button>
+                     </items>
+                  </ToolBar>
+                  <ImageView fitHeight="308.0" fitWidth="770.0" layoutX="130.0" layoutY="192.0" nodeOrientation="INHERIT" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="0.0">
+                     <image>
+                        <Image url="@img/portada4.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <GridPane alignment="TOP_RIGHT" layoutX="152.0" layoutY="74.0" prefHeight="376.0" prefWidth="322.0">
+                     <children>
+                        <Label text="Nombre(s): " />
+                        <Label text="Apellido Paterno: " GridPane.rowIndex="1" />
+                        <Label text="Apellido Materno: " GridPane.rowIndex="2" />
+                        <Label text="Teléfono: " GridPane.rowIndex="3" />
+                        <Label text="Correo: " GridPane.rowIndex="4" />
+                        <Label GridPane.rowIndex="9" />
+                        <TextField fx:id="txtNombre" promptText="Ingrese su(s) nombre(s)" GridPane.columnIndex="1" />
+                        <TextField fx:id="txtApeP" promptText="Ingrese su primer apellido." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtApeM" promptText="Ingrese su segundo apellido (Opcional)" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="txtTelefono" promptText="000 000 0000 (Opcional)" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="txtCorreo" promptText="ejemplo@ejemplo.com (Opcional)" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label text="C.P: " GridPane.rowIndex="6" />
+                        <Label text="Dirección: " GridPane.rowIndex="5" />
+                        <TextField fx:id="txtDireccion" promptText="Calle* Av. * No. # " GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <TextField fx:id="txtCp" prefHeight="25.0" prefWidth="159.0" promptText="Código Postal " GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <GridPane.margin>
+                              <Insets right="85.0" />
+                           </GridPane.margin></TextField>
+                        <Button fx:id="btnValidarCP" mnemonicParsing="false" onAction="#clickValidarCP" text="Validar" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="21.0">
+                                 <image>
+                                    <Image url="@img/success.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="140.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <ComboBox fx:id="cbEstados" prefHeight="25.0" prefWidth="237.0" promptText="Estados" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <ComboBox fx:id="cbMunicipios" prefHeight="25.0" prefWidth="240.0" promptText="Municipios" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <ComboBox fx:id="cbColonias" prefHeight="25.0" prefWidth="240.0" promptText="Seleccione una opción." GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <ComboBox fx:id="cbSexo" prefHeight="25.0" prefWidth="237.0" promptText="Seleccione una opción." GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                        <ComboBox fx:id="cbCompanias" prefHeight="25.0" prefWidth="237.0" promptText="Seleccione una opción." GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                        <Label text="Sexo: " GridPane.rowIndex="10" />
+                        <Label text="Compañía: " GridPane.rowIndex="11" />
+                        <Label text="Estado: " GridPane.rowIndex="7" />
+                        <Label text="Municipio: " GridPane.rowIndex="8" />
+                        <Label text="Colonia: " GridPane.rowIndex="9" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="104.0" minWidth="10.0" prefWidth="101.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="239.0" minWidth="10.0" prefWidth="215.0" />
+                     </columnConstraints>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <TextField fx:id="txtBuscador" layoutX="1095.0" layoutY="30.0" onKeyReleased="#textChange_busqueda" prefHeight="25.0" prefWidth="216.0" promptText="Buscar en Proveedores" AnchorPane.rightAnchor="20.0" />
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="1065.0" layoutY="28.0" AnchorPane.rightAnchor="240.0">
+                     <image>
+                        <Image url="@img/buscar.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <CheckBox fx:id="ckbInactivos" layoutX="498.0" layoutY="47.0" mnemonicParsing="false" onAction="#clickInactivos" text="Mostrar Inactivos" />
+                  <TableView fx:id="tvProveedores" layoutX="498.0" layoutY="74.0" onMouseClicked="#clickTabla" prefHeight="376.0" prefWidth="382.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="498.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="74.0">
+                     <columns>
+                        <TableColumn minWidth="110.0" prefWidth="-1.0" text="Nombre">
+							<cellValueFactory>
+	            				<PropertyValueFactory property="nombre_proveedor" />
+	         			   </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="110.0" prefWidth="-1.0" text="Apellido Paterno">
+							<cellValueFactory>
+	            				<PropertyValueFactory property="apeP_proveedor" />
+	         			   </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="110.0" prefWidth="-1.0" text="Apellido Materno">
+							<cellValueFactory>
+	            				<PropertyValueFactory property="apeM_proveedor" />
+	         			   </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="80.0" prefWidth="-1.0" text="Teléfono">
+							<cellValueFactory>
+	            				<PropertyValueFactory property="telefono_proveedor" />
+	         			   </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="120.0" prefWidth="-1.0" text="Correo">
+							<cellValueFactory>
+	            				<PropertyValueFactory property="correo_proveedor" />
+	         			   </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="180.0" prefWidth="-1.0" text="Dirección">
+							<cellValueFactory>
+	            				<PropertyValueFactory property="direccion_proveedor" />
+	         			   </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="60.0" prefWidth="-1.0" text="CP">
+							<cellValueFactory>
+	            				<PropertyValueFactory property="cp_proveedor" />
+	         			   </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="100.0" prefWidth="-1.0" text="Estado">
+							<cellValueFactory>
+	            				<PropertyValueFactory property="edo_proveedor" />
+	         			   </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="100.0" prefWidth="-1.0" text="Municipio">
+							<cellValueFactory>
+	            				<PropertyValueFactory property="mpio_proveedor" />
+	         			   </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="100.0" prefWidth="-1.0" text="Colonia">
+							<cellValueFactory>
+	            				<PropertyValueFactory property="col_proveedor" />
+	         			   </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="70.0" prefWidth="-1.0" text="Sexo">
+							<cellValueFactory>
+	            				<PropertyValueFactory property="sexo_proveedor" />
+	         			   </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="120.0" prefWidth="75.0" text="Compañía">
+							<cellValueFactory>
+	            				<PropertyValueFactory property="compania_proveedor" />
+	         			   </cellValueFactory>
+                        </TableColumn>
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

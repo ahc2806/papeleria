@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:controller="controlador.ControladorAvatares" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="650.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Separator layoutX="195.0" layoutY="4.0" orientation="VERTICAL" prefHeight="296.0" prefWidth="2.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="390.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets right="5.0" />
+         </padding></Separator>
+      <ImageView onMouseClicked="#f1" fitHeight="70.0" fitWidth="70.0" layoutX="236.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/avatares/avatar%201.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView onMouseClicked="#f2" fitHeight="70.0" fitWidth="70.0" layoutX="317.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/avatares/avatar%202.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView onMouseClicked="#f3" fitHeight="70.0" fitWidth="70.0" layoutX="400.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/avatares/avatar%203.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView onMouseClicked="#f4" fitHeight="70.0" fitWidth="70.0" layoutX="483.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/avatares/avatar%204.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView onMouseClicked="#f5" fitHeight="70.0" fitWidth="70.0" layoutX="566.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/avatares/avatar%205.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView onMouseClicked="#f6" fitHeight="70.0" fitWidth="70.0" layoutX="236.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/avatares/avatar%206.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="215.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="215.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView onMouseClicked="#f7" fitHeight="70.0" fitWidth="70.0" layoutX="317.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/avatares/avatar%207.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView onMouseClicked="#f8" fitHeight="70.0" fitWidth="70.0" layoutX="400.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/avatares/avatar%208.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView onMouseClicked="#f9" fitHeight="70.0" fitWidth="70.0" layoutX="483.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/avatares/avatar%209.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView onMouseClicked="#f10" fitHeight="70.0" fitWidth="70.0" layoutX="566.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/avatares/avatar%2010.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView onMouseClicked="#f11" fitHeight="70.0" fitWidth="70.0" layoutX="236.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/avatares/avatar%2011.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView onMouseClicked="#f12" fitHeight="70.0" fitWidth="70.0" layoutX="317.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/avatares/avatar%2012.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView onMouseClicked="#f13" fitHeight="70.0" fitWidth="70.0" layoutX="400.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@img/avatares/avatar%2013.png" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#f14" fitHeight="70.0" fitWidth="70.0" layoutX="483.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@img/avatares/avatar%2014.png" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#f15" fitHeight="70.0" fitWidth="70.0" layoutX="566.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@img/avatares/avatar%2015.png" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#f16" fitHeight="70.0" fitWidth="70.0" layoutX="236.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@img/avatares/avatar%2016.png" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#f17" fitHeight="70.0" fitWidth="70.0" layoutX="317.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@img/avatares/avatar%2017.png" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#f18" fitHeight="70.0" fitWidth="70.0" layoutX="400.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@img/avatares/avatar%2018.png" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#f19" fitHeight="70.0" fitWidth="70.0" layoutX="483.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@img/avatares/avatar%2019.png" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#f20" fitHeight="70.0" fitWidth="70.0" layoutX="566.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@img/avatares/avatar%2020.png" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#f21" fitHeight="70.0" fitWidth="70.0" layoutX="236.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@img/avatares/avatar%2021.png" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#f22" fitHeight="70.0" fitWidth="70.0" layoutX="317.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@img/avatares/avatar%2022.png" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#f23" fitHeight="70.0" fitWidth="70.0" layoutX="400.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@img/avatares/avatar%2023.png" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#f24" fitHeight="70.0" fitWidth="70.0" layoutX="483.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@img/avatares/avatar%2024.png" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#f25" fitHeight="70.0" fitWidth="70.0" layoutX="566.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@img/avatares/avatar%2025.png" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#f26" fitHeight="70.0" fitWidth="70.0" layoutX="236.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@img/avatares/avatar%2026.jpg" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#f27" fitHeight="70.0" fitWidth="70.0" layoutX="317.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@img/avatares/avatar%2027.jpg" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#f28" fitHeight="70.0" fitWidth="70.0" layoutX="400.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@img/avatares/avatar%2028.png" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#f29" fitHeight="70.0" fitWidth="70.0" layoutX="483.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@img/avatares/avatar%2029.png" />
+         </image>
+      </ImageView>
+      <ImageView onMouseClicked="#f30" fitHeight="70.0" fitWidth="70.0" layoutX="566.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@img/avatares/avatar%2030.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="13.0" layoutY="66.0" spacing="5.0" style="-fx-background-color: #1ABC9C;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="425.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="17.0" layoutY="66.0" text="¡Elige un Avatar!" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="perfil" fitHeight="200.0" fitWidth="200.0" layoutX="13.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="437.0">
+               <image>
+                  <Image url="@img/usuario2.png" />
+               </image>
+            </ImageView>
+            <Button onAction="#clickElegir" layoutX="14.0" layoutY="332.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" text="Elegir Foto de Perfil">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0">
+                     <image>
+                        <Image url="@img/guardar2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button onAction="#clickCancelar" layoutX="14.0" layoutY="367.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" text="Cancelar">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0">
+                     <image>
+                        <Image url="@img/cancelar2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button onAction="#clickEliminar" layoutX="14.0" layoutY="402.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" text="Eliminar">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0">
+                     <image>
+                        <Image url="@img/eliminar2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button onAction="#clickCerrar" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" text="Cerrar">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0">
+                     <image>
+                        <Image url="@img/cerrar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

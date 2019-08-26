@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorVentas">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar>
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Edit">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="900.0" style="-fx-background-color: #1ABC9C;">
+               <children>
+                  <Pane prefHeight="75.0" prefWidth="130.0">
+                     <children>
+                        <ImageView fitHeight="75.0" fitWidth="130.0" pickOnBounds="true">
+                           <effect>
+                              <ColorAdjust brightness="0.49" contrast="0.95" saturation="-0.05" />
+                           </effect>
+                           <image>
+                              <Image url="@img/papeleriacinthya.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label alignment="CENTER" contentDisplay="TEXT_ONLY" maxHeight="1200.0" maxWidth="1980.0" text="Ventas $" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+               <children>
+                  <ToolBar layoutX="130.0" prefHeight="40.0" prefWidth="770.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <Button onAction="#clickBuscar" mnemonicParsing="false" text="Buscar">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0">
+                                 <image>
+                                    <Image url="@img/lupa.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                    </items>
+                  </ToolBar>
+                  <HBox alignment="CENTER" layoutX="130.0" layoutY="43.0" prefHeight="67.0" prefWidth="770.0" spacing="5.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="43.0">
+                     <children>
+                        <TextField fx:id="txtCodigo" prefHeight="45.0" prefWidth="450.0" promptText="CÓDIGO">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="btnMenos" mnemonicParsing="false" onAction="#clickMenos" prefHeight="45.0" prefWidth="45.0" text="–" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="txtCantidad" alignment="CENTER" prefHeight="45.0" prefWidth="75.0" promptText="CANT">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="btnMas" mnemonicParsing="false" onAction="#clickMas" prefHeight="45.0" prefWidth="45.0" text="+">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <ToolBar orientation="VERTICAL" prefHeight="500.0" prefWidth="130.0" style="-fx-background-color: #7D3C98;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <items>
+                        <Button fx:id="btnAgregar" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickAgregar" style="-fx-background-color: transparent;" text="Agregar" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0">
+                                 <image>
+                                    <Image url="@img/nuevo.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="33.0" right="33.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnCancelar" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickCancelar" style="-fx-background-color: transparent;" text="Cancelar" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0">
+                                 <image>
+                                    <Image url="@img/cancelar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="31.0" right="32.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnEliminar" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickEliminar" style="-fx-background-color: transparent;" text="Eliminar" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0">
+                                 <image>
+                                    <Image url="@img/eliminar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="33.0" right="33.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnRegresar" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickRegresar" style="-fx-background-color: transparent;" text="Regresar" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="52.0" fitWidth="52.0">
+                                 <image>
+                                    <Image url="@img/regresar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="31.0" right="31.0" top="5.0" />
+                           </padding>
+                        </Button>
+                     </items>
+                  </ToolBar>
+                  <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="550.0" layoutY="441.0" maxHeight="1200.0" maxWidth="1980.0" text="TOTAL $:" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="222.0">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtTotal" alignment="TOP_RIGHT" editable="false" layoutX="686.0" layoutY="441.0" opacity="0.94" prefHeight="45.0" prefWidth="200.0" text="0" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0">
+                     <font>
+                        <Font size="21.0" />
+                     </font></TextField>
+                  <Button onAction="#clickCobrar" layoutX="141.0" layoutY="440.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="120.0" text="Cobrar" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="145.0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <TableView fx:id="tvVentas" layoutX="144.0" layoutY="111.0" onMouseClicked="#clickTabla" prefHeight="309.0" prefWidth="756.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="145.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="111.0">
+                    <columns>
+                      <TableColumn fx:id="tcDescripcion" editable="false" maxWidth="1.7976931348623157E308" minWidth="500.0" prefWidth="-1.0" text="Descripción" />
+                      <TableColumn fx:id="tcCantidad" maxWidth="1.7976931348623157E308" minWidth="100.0" prefWidth="-1.0" text="Cantidad" />
+                      <TableColumn fx:id="tcImporte" maxWidth="1.7976931348623157E308" minWidth="120.0" prefWidth="-1.0" text="Importe" />
+                      <TableColumn fx:id="tcTotal" maxWidth="1.7976931348623157E308" minWidth="120.0" prefWidth="-1.0" text="Sub Total" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.cell.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #7D3C98;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorBuscar">
+   <children>
+      <TableView onMouseClicked="#clickTabla" fx:id="tvInventario" layoutX="-1.0" layoutY="64.0" prefHeight="471.0" prefWidth="360.0" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="65.0">
+        <columns>
+          <TableColumn fx:id="tcCodigo" minWidth="100.0" prefWidth="-1.0" text="Código">
+         		 <cellValueFactory>
+	            	<PropertyValueFactory property="codigo_inventario" />
+	         	</cellValueFactory>
+             </TableColumn>
+          <TableColumn minWidth="300.0" prefWidth="-1.0" text="Descripción">
+         		 <cellValueFactory>
+	            	<PropertyValueFactory property="nombre_inventario" />
+	         	  </cellValueFactory>
+          </TableColumn>
+        </columns>
+      </TableView>
+      <TextField onKeyReleased="#textChange_busqueda" fx:id="txtBuscador" layoutX="20.0" layoutY="14.0" prefHeight="40.0" prefWidth="360.0" promptText="BUSCAR" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button onAction="#clickAceptar" fx:id="btnAceptar" layoutX="20.0" layoutY="545.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" text="Aceptar" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="240.0">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@img/success.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button onAction="#clickCerrar" fx:id="btnCerrar" layoutX="240.0" layoutY="545.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" text="Cerrar" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="20.0">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@img/error.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

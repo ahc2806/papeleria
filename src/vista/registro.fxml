@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorRegistro">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar>
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Edit">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="900.0" style="-fx-background-color: #1ABC9C;">
+               <children>
+                  <Pane prefHeight="75.0" prefWidth="130.0">
+                     <children>
+                        <ImageView fitHeight="75.0" fitWidth="130.0" pickOnBounds="true">
+                           <effect>
+                              <ColorAdjust brightness="0.49" contrast="0.95" saturation="-0.05" />
+                           </effect>
+                           <image>
+                              <Image url="@img/papeleriacinthya.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label alignment="CENTER" contentDisplay="TEXT_ONLY" maxHeight="1200.0" maxWidth="1980.0" text="Nuevo Usuario" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+               <children>
+                  <ToolBar orientation="VERTICAL" prefHeight="500.0" prefWidth="130.0" style="-fx-background-color: #7D3C98;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <items>
+                        <Button fx:id="btnRegistrar" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickRegistrar" style="-fx-background-color: transparent;" text="Registrar" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0">
+                                 <image>
+                                    <Image url="@img/guardar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="30.0" right="30.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnCancelar" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickCancelar" style="-fx-background-color: transparent;" text="Cancelar" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0">
+                                 <image>
+                                    <Image url="@img/cancelar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="31.0" right="32.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnRegresar" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickRegresar" style="-fx-background-color: transparent;" text="Regresar" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="52.0" fitWidth="52.0">
+                                 <image>
+                                    <Image url="@img/regresar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="31.0" right="31.0" top="5.0" />
+                           </padding>
+                        </Button>
+                     </items>
+                  </ToolBar>
+                  <ImageView fitHeight="500.0" fitWidth="770.0" layoutX="130.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@img/portada7.jpg" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="-0.42" contrast="0.14" saturation="-0.11" />
+                     </effect>
+                  </ImageView>
+                  <Pane layoutX="291.0" layoutY="64.0">
+                     <children>
+                        <TextField fx:id="txtUsuario" alignment="CENTER" prefHeight="50.0" prefWidth="221.0" promptText="Usuario">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </TextField>
+                        <PasswordField fx:id="pfContrasena" alignment="CENTER" layoutX="227.0" prefHeight="50.0" prefWidth="221.0" promptText="Contraseña">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </PasswordField>
+                        <TextField fx:id="txtNombre" alignment="CENTER" layoutY="60.0" prefHeight="50.0" prefWidth="448.0" promptText="Nombre (s)">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtApeP" alignment="CENTER" layoutY="120.0" prefHeight="50.0" prefWidth="221.0" promptText="Apellido Paterno">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtApeM" alignment="CENTER" layoutX="227.0" layoutY="120.0" prefHeight="50.0" prefWidth="221.0" promptText="Apellido Materno">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtTelefono" alignment="CENTER" layoutY="179.0" prefHeight="50.0" prefWidth="448.0" promptText="Teléfono">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtCorreo" alignment="CENTER" layoutY="240.0" prefHeight="50.0" prefWidth="448.0" promptText="Correo">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </TextField>
+                        <DatePicker fx:id="dpFechaNac" editable="false" layoutY="300.0" prefHeight="50.0" prefWidth="221.0" promptText="Fecha de Nacimiento" />
+                        <ComboBox fx:id="cbSexo" layoutX="227.0" layoutY="300.0" prefHeight="50.0" prefWidth="221.0" promptText="Sexo" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

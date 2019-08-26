@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorInicio">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar>
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Edit">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="900.0" style="-fx-background-color: #1ABC9C;">
+               <children>
+                  <Pane prefHeight="75.0" prefWidth="130.0">
+                     <children>
+                        <ImageView fitHeight="75.0" fitWidth="130.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@img/papeleriacinthya.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="0.49" contrast="0.95" saturation="-0.05" />
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="75.0" prefWidth="293.0">
+                     <children>
+                        <Label layoutX="21.0" layoutY="6.0" text="Usuario:" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="21.0" layoutY="29.0" text="Tipo:" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="21.0" layoutY="53.0" text="Fecha:" textFill="#ffffff">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txfUsuario" editable="false" focusTraversable="false" layoutX="85.0" prefHeight="25.0" prefWidth="200.0" />
+                        <TextField fx:id="txfTipo" editable="false" focusTraversable="false" layoutX="85.0" layoutY="25.0" prefHeight="25.0" prefWidth="200.0" />
+                        <TextField fx:id="txfHora" editable="false" focusTraversable="false" layoutX="85.0" layoutY="50.0" prefHeight="25.0" prefWidth="200.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+               <children>
+                  <ToolBar orientation="VERTICAL" prefHeight="500.0" prefWidth="130.0" style="-fx-background-color: #7D3C98;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <items>
+                        <Button fx:id="btnPerfil" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickPerfil" style="-fx-background-color: transparent;" text="Perfil" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="perfil" fitHeight="50.0" fitWidth="50.0">
+                                 <image>
+                                    <Image url="@img/perfil.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="35.0" right="35.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnUsuarios" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickUsuarios" style="-fx-background-color: transparent;" text="Usuarios" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0">
+                                 <image>
+                                    <Image url="@img/usuarios.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="31.0" right="32.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnInventario" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickInventario" style="-fx-background-color: transparent;" text="Inventario" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0">
+                                 <image>
+                                    <Image url="@img/inventario.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="26.0" right="26.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnVentas" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickVentas" style="-fx-background-color: transparent;" text="Ventas" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0">
+                                 <image>
+                                    <Image url="@img/ventas.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="35.0" right="35.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnProveedores" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickProveedores" style="-fx-background-color: transparent;" text="Proveedores" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0">
+                                 <effect>
+                                    <ColorAdjust brightness="-0.1" contrast="0.25" hue="-0.3" saturation="-0.12" />
+                                 </effect>
+                                 <image>
+                                    <Image url="@img/proveedores.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="19.0" right="19.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnAgregarComp" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickCompanias" style="-fx-background-color: transparent;" text="Compañías" textAlignment="CENTER" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="60.0" fitWidth="60.0">
+                                 <image>
+                                    <Image url="@img/compañias.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="23.0" right="24.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button onAction="#clickReportes" fx:id="btnReportes" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Reportes" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="52.0" fitWidth="52.0">
+                                 <image>
+                                    <Image url="@img/reportes.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="30.0" right="30.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnConfiguracion" contentDisplay="TOP" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Configuración" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0">
+                                 <effect>
+                                    <ColorAdjust brightness="-0.14" contrast="-0.19" hue="0.02" saturation="-0.07" />
+                                 </effect>
+                                 <image>
+                                    <Image url="@img/configuracion.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="13.0" right="13.0" top="5.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnCerrarSesion" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickCerrarSesion" style="-fx-background-color: transparent;" text="Cerrar Sesión">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="48.0" fitWidth="48.0">
+                                 <image>
+                                    <Image url="@img/cerrarsesion.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="5.0" left="16.0" right="16.0" top="5.0" />
+                           </padding>
+                        </Button>
+                     </items>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </ToolBar>
+                  <ImageView fitHeight="500.0" fitWidth="423.0" layoutX="507.0" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@img/portada3.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

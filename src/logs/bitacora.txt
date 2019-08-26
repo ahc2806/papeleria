@@ -1,0 +1,263 @@
+BITACORA DE OPERACIONES
+Operacion en: Catálogo de Usuarios
+Fecha: 07/08/2019 15:39:28
+Descripcion: Editar
+******************************************************************
+BITACORA DE OPERACIONES
+Operacion en: Catálogo de Usuarios
+Usuario: admin123
+Fecha: 07/08/2019 15:49:49
+Descripcion: Editar
+******************************************************************
+BITACORA DE OPERACIONES
+Operacion en: Catálogo de Usuarios
+Usuario: gorditos
+Fecha: 07/08/2019 15:50:14
+Descripcion: Editar
+******************************************************************
+BITACORA DE OPERACIONES
+Operacion en: Catálogo de Reportes
+id_venta: 115
+Fecha: 07/08/2019 20:06:40
+Descripcion: Eliminar
+******************************************************************
+BITACORA DE OPERACIONES
+Operacion en: Catálogo de Reportes
+id_venta: 113
+Fecha: 07/08/2019 20:07:32
+Descripcion: Eliminar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Usuarios
+id_usuario: 1
+Fecha: 12/08/2019 10:28:08
+Descripción: Foto de Perfil
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Usuarios
+id_usuario: 1
+Fecha: 12/08/2019 10:28:46
+Descripción: Foto de Perfil
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Usuarios
+id_usuario: 1
+Fecha: 12/08/2019 10:33:58
+Descripción: Foto de Perfil
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Usuarios
+id_usuario: 1
+Fecha: 12/08/2019 10:33:58
+Descripción: Foto de Perfil
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Usuarios
+id_usuario: 1
+Fecha: 12/08/2019 10:34:25
+Descripción: Foto de Perfil
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Usuarios
+id_usuario: 1
+Fecha: 12/08/2019 10:34:25
+Descripción: Foto de Perfil
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Usuarios
+id_usuario: 1
+Fecha: 12/08/2019 10:39:56
+Descripción: Foto de Perfil
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Usuarios
+id_usuario: 1
+Fecha: 12/08/2019 10:39:56
+Descripción: Foto de Perfil
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Usuarios
+id_usuario: 1
+Fecha: 12/08/2019 10:39:56
+Descripción: Foto de Perfil
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Productos
+id_inventario: 22
+Fecha: 13/08/2019 19:45:05
+Descripción: Eliminar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Productos
+id_inventario: 21
+Fecha: 13/08/2019 19:45:05
+Descripción: Eliminar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Ventas
+Descripción: MARCADOR PERMANENTE BEROL NEGRO
+Fecha: 13/08/2019 19:49:31
+Descripción: Agregar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Ventas
+Descripción: MARCADOR PERMANENTE BEROL ROJO
+Fecha: 13/08/2019 19:49:31
+Descripción: Agregar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Ventas
+Descripción: MARCADOR PERMANENTE BEROL AZUL
+Fecha: 13/08/2019 19:49:31
+Descripción: Agregar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Ventas
+Descripción: PAPER MATE MIRADO
+Fecha: 13/08/2019 19:49:31
+Descripción: Agregar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Ventas
+Descripción: BOLÍGRAFO BIC AZUL
+Fecha: 13/08/2019 19:49:31
+Descripción: Agregar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Ventas
+Descripción: BOLÍGRAFO BIC NEGRO
+Fecha: 13/08/2019 19:49:31
+Descripción: Agregar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Ventas
+Descripción: LIBRETA 100E ESTRELLA
+Fecha: 13/08/2019 19:49:31
+Descripción: Agregar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Ventas
+Descripción: LÁPICES DE COLORES NORMA
+Fecha: 13/08/2019 19:49:31
+Descripción: Agregar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Ventas
+Descripción: MARCADOR PERMANENTE BEROL NEGRO
+Fecha: 16/08/2019 14:03:01
+Descripción: Agregar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Productos
+id_inventario: 10
+Fecha: 16/08/2019 14:06:33
+Descripción: Disminuir/Restaurar Almacén
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Ventas
+Descripción: MARCADOR PERMANENTE BEROL ROJO
+Fecha: 16/08/2019 14:07:15
+Descripción: Agregar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Ventas
+Descripción: MARCADOR PERMANENTE BEROL ROJO
+Fecha: 16/08/2019 14:11:50
+Descripción: Agregar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Ventas
+Descripción: MARCADOR PERMANENTE BEROL NEGRO
+Fecha: 16/08/2019 14:26:11
+Descripción: Agregar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Productos
+Producto: BOLÍGRAFO BIC NEGRO
+Fecha: 16/08/2019 14:27:40
+Descripción: Editar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Productos
+id_inventario: 21
+Fecha: 16/08/2019 14:28:18
+Descripción: Reactivar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Productos
+Producto: PAPER MATE MIRADO
+Fecha: 16/08/2019 14:28:24
+Descripción: Editar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Productos
+id_inventario: 22
+Fecha: 16/08/2019 14:28:44
+Descripción: Reactivar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Ventas
+Descripción: MARCADOR PERMANENTE BEROL ROJO
+Fecha: 16/08/2019 14:31:20
+Descripción: Agregar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Ventas
+Descripción: MARCADOR PERMANENTE BEROL AZUL
+Fecha: 16/08/2019 14:32:08
+Descripción: Agregar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Reportes
+id_venta: 2
+Fecha: 16/08/2019 14:34:32
+Descripción: Eliminar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Reportes
+id_venta: 3
+Fecha: 16/08/2019 14:34:36
+Descripción: Eliminar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Reportes
+id_venta: 1
+Fecha: 16/08/2019 14:34:38
+Descripción: Eliminar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Reportes
+id_venta: 1
+Fecha: 16/08/2019 14:34:47
+Descripción: Reactivar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Reportes
+id_venta: 2
+Fecha: 16/08/2019 14:34:55
+Descripción: Reactivar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Reportes
+id_venta: 3
+Fecha: 16/08/2019 14:34:59
+Descripción: Reactivar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Reportes
+id_venta: 6
+Fecha: 16/08/2019 14:35:07
+Descripción: Eliminar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Reportes
+id_venta: 6
+Fecha: 16/08/2019 14:35:15
+Descripción: Reactivar
+******************************************************************
+BITÁCORA DE OPERACIONES
+Operación en: Catálogo de Ventas
+Descripción: MARCADOR PERMANENTE BEROL ROJO
+Fecha: 17/08/2019 08:31:20
+Descripción: Agregar
+******************************************************************
